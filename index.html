@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <link rel="stylesheet" href="./style.css">
+ <style>
+    body {
+      background: radial-gradient(circle at top, #2a0a4e, #12001f);
+    }
+  </style>
+</head>
+<body>
+    <header
+  class=" relative min-h-screen bg-cover bg-no-repeat"
+  style="background-image: url('./assets/hero-bg.png');
+  background-position: center 23%;">
+
+  <!-- overlay (dark effect like design) -->
+  <div class="absolute inset-0 bg-[#12001f]/80"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-[1140px] mx-auto px-4">
+
+    <!-- NAVBAR -->
+    <nav class="flex items-center justify-between py-6">
+      <h1 class="text-xl font-bold">
+        Tech<span class="text-pink-500">Wave</span>
+      </h1>
+
+      <ul class="hidden md:flex gap-8 text-sm text-gray-300">
+        <li>About</li>
+        <li>Episodes</li>
+        <li>Host</li>
+      </ul>
+
+      <button
+        class="px-4 py-1.5 rounded-full text-sm
+               bg-gradient-to-r from-pink-500 to-purple-500">
+        Subscribe
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <div class="text-center mt-20">
+
+      <!-- Mic with background image -->
+      <div class="relative w-72 h-72 mx-auto flex items-center justify-center">
+
+        <!-- Circle BG IMAGE -->
+        <img
+          src="./assets/hero-circle.png"
+          class="absolute inset-0 w-full h-full object-contain" />
+
+        <!-- NEW badge -->
+        <span
+          class="absolute top-6 right-10 text-xs bg-green-400 text-black px-2 rounded-full">
+          NEW
+        </span>
+
+        <!-- Microphone -->
+        <img
+          src="./assets/microphone.png"
+          class="relative z-10 w-20" />
+      </div>
+
+      <h2 class="text-4xl md:text-5xl font-bold mt-10">
+        TechWave
+      </h2>
+
+      <p class="text-gray-400 max-w-xl mx-auto mt-4 text-sm">
+        Your daily dose of tech insights, productivity hacks, and personal growth.
+      </p>
+
+      <div class="flex justify-center gap-4 mt-6">
+        <button
+          class="px-5 py-2 rounded-full text-sm
+                 bg-gradient-to-r from-pink-500 to-purple-500">
+          Listen on Spotify
+        </button>
+
+        <button
+          class="px-5 py-2 rounded-full text-sm bg-green-500 text-black">
+          Subscribe
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+<section class="max-w-[900px] mx-auto mt-24 text-center px-4 ;">
+  <h3 class="text-2xl font-semibold mb-4">About The Podcast</h3>
+  <p class="text-gray-400 text-sm leading-relaxed">
+    TechWave is your go-to podcast for staying updated in today’s world of innovation.
+    We break complex topics into digestible insights, explore productivity strategies,
+    and share stories of personal growth from industry leaders.
+  </p>
+</section>
+<section class="max-w-[1140px] mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+  <div>
+    <h4 class="text-green-400 text-2xl font-bold">150K+</h4>
+    <p class="text-xs text-gray-400">Monthly Listeners</p>
+  </div>
+  <div>
+    <h4 class="text-green-400 text-2xl font-bold">200+</h4>
+    <p class="text-xs text-gray-400">Episodes Published</p>
+  </div>
+  <div>
+    <h4 class="text-green-400 text-2xl font-bold">4.9★</h4>
+    <p class="text-xs text-gray-400">Average Rating</p>
+  </div>
+  <div>
+    <h4 class="text-green-400 text-2xl font-bold">50+</h4>
+    <p class="text-xs text-gray-400">Industry Experts</p>
+  </div>
+</section>
+
+<section class="max-w-[1140px] mx-auto mt-32 px-4">
+  <h2 class="text-3xl font-semibold text-center mb-16">
+    Why Choose TechWave
+  </h2>
+
+  
+    
+
+  <!-- Bottom Cards -->
+
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Top Card -->
+  <div class="bg-purple-900/40 rounded-2xl p-8 row-span-2">
+    <h3 class="text-xl font-semibold mb-3 flex items-center gap-2">
+      🎧 Premium Audio Quality
+    </h3>
+    <p class="text-gray-400 text-sm max-w-2xl">
+      Experience crystal-clear sound with professional-grade audio production,
+      ensuring every conversation is immersive and engaging across all devices.
+    </p>
+  </div>
+      <div class="bg-purple-900/40 rounded-2xl p-6 col-span-2">
+      <h4 class="font-semibold mb-2 flex items-center gap-2">
+        📱 Mobile Friendly
+      </h4>
+      <p class="text-sm text-gray-400">
+        Seamless listening experience on mobile, tablet, and desktop devices.
+      </p>
+    </div>
+
+    <div class="bg-purple-900/40 rounded-2xl p-6 col-span-2">
+      <h4 class="font-semibold mb-2 flex items-center gap-2">
+        🌍 Global Community
+      </h4>
+      <p class="text-sm text-gray-400">
+        Join thousands of listeners worldwide and grow together.
+      </p>
+    </div>
+
+    <div class="bg-purple-900/40 rounded-2xl p-6 col-span-2">
+      <h4 class="font-semibold mb-2 flex items-center gap-2">
+        📚 Rich Resources
+      </h4>
+      <p class="text-sm text-gray-400">
+        Access notes, transcripts, and curated learning materials.
+      </p>
+    </div>    <div class="bg-purple-900/40 rounded-2xl p-6">
+      <h4 class="font-semibold mb-2 flex items-center gap-2">
+        📚 Rich Resources
+      </h4>
+      <p class="text-sm text-gray-400">
+        Access notes, transcripts, and curated learning materials.
+      </p>
+    </div>
+    </div>
+
+</section>
+
+</body>
+</html>
