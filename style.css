@@ -43,6 +43,7 @@
 }
 .icon-img {
   transition: transform 300ms ease;
+  cursor: pointer;
 }
 
 .icon-img:hover {
@@ -55,20 +56,34 @@
 .video-card:hover iframe {
   transform: scale(1.03);
 }
-.feature-icon {
-  transition: background 300ms ease, transform 300ms ease;
-}
 
-.card:hover .feature-icon {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
-  transform: scale(1.1);
-}
 .host-img {
   transition: transform 400ms ease;
 }
 
 .card:hover .host-img {
   transform: scale(1.05);
+}
+
+.btn-gradient {
+  padding: 12px 28px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-1{
+
+}
+.btn-2{
+    background: linear-gradient(135deg, #f63bb8fa, #d46906d2);
+}
+.btn-gradient:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(246, 112, 59, 0.45);
 }
 
 
